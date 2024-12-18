@@ -1,0 +1,143 @@
+/* Allgemeine Stile */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+h1 {
+    margin: 20px 0;
+    font-size: 2rem;
+}
+
+button {
+    background-color: #1976d2;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 10px;
+}
+
+button:hover {
+    background-color: #125ea3;
+}
+
+.screen {
+    display: none;
+    padding: 20px;
+}
+
+.screen.active {
+    display: block;
+}
+
+/* Netzwerk-Container */
+#network-container {
+    position: relative;
+    width: 90%;
+    height: 600px;
+    margin: 20px auto;
+    border: 2px solid #ccc;
+    background-color: white;
+    overflow: hidden;
+}
+
+/* Tooltip */
+.tooltip {
+    position: absolute;
+    background-color: lightgray;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    visibility: hidden;
+}
+
+/* KITs zum Drag-and-Drop */
+.kit {
+    padding: 10px;
+    margin: 10px;
+    background-color: #28a745;
+    color: white;
+    border-radius: 5px;
+    text-align: center;
+    cursor: grab;
+}
+
+.kit:hover {
+    background-color: #125ea3;
+}
+
+/* EDC-Kreise */
+.edc-circle {
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    background-color: #007bff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: bold;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* Drop-Bereich */
+.drop-area {
+    width: 60%;
+    height: 100px;
+    border: 2px dashed #888;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 30px auto;
+    background-color: #f9f9f9;
+    color: #555;
+}
+
+/* KIT-Popup */
+#kit-popup {
+    position: fixed;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -20%);
+    background: white;
+    border: 1px solid #ccc;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 300px;
+    z-index: 1000;
+}
+
+.hidden {
+    display: none;
+}
+
+.question {
+    margin: 20px auto;
+    text-align: left;
+    width: 60%;
+}
+
+.question h3 {
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+}
+
+.question label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+#result {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
